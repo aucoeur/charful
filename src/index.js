@@ -82,15 +82,18 @@ console.log(camelCase('Hello world domination'))
 
 // Challenge 8
 // shift() this method will take the first character of a string and move to the end of a string:
-
 // Example: Hello World -> ello WorldH
 
 // Strategies: Use String.slice()
-
 // Advanced: Include an optional second parameter that sets the number of characters to shift.
 // Example: shift('foo bar', 3) -> ' barfoo'
-
 // These functions should all take a string as input and return a string as output.
+
+function shift(str, num) {
+  return str.slice(num) + str.slice(0, num)
+}
+console.log(shift('Hello World', 1))
+console.log(shift('foobar', 3))
 
 // Challenge 9
 
