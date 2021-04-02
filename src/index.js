@@ -114,24 +114,34 @@ function makeHashTag(str) {
   return list.slice(0, 3).map(word => `#${capitalize(word)}`).join('')
 }
 console.log(makeHashTag("Amazing bongo drums for sale"))
+
 // Challenge 10
 
 // isEmpty(str) - Returns true if the given string is empty or contains only whitespace. White space includes: spaces, line returns, and tabs. These characters can be represented with: \n (new line) \r (carrige return), \t (tab).
 
 // Example:
-
 // Input: "Abc def"
 // Output: isEmpty("Abc def") // false
 // // Example - notice source string
 // // contains tabs, spaces, and returns
-// const str = `
 
-// 			`;
-
-// isEmpty(str) // true
 // Strategies:
-
 // You can use string.trim() to remove spaces at the beginning and end of the string. What's left is either empty characters like returns, enter or tab, or other characters. Loop over the remaining characters, if you find a character that is not \n, \r, or \t return false. If you got to the end of the loop return true.
-// Challenge 11 Adding documentation
 
+function isEmpty(str) {
+  // .test() returns true if regex match..
+  // note: returning false if true might be kind of janky.. maybe reconsider
+  return (/\S/i).test(str) ? false : true
+}
+
+const emptyStr = `
+
+			`;
+console.log(isEmpty(emptyStr)) // true
+console.log(isEmpty('\t\r\n ')) // true
+console.log(isEmpty('  h   ')) // false
+console.log(isEmpty('  \t1   ')) // false
+
+
+// Challenge 11 Adding documentation
 // Add a readme.md to your GitHub Repo. In this file you will document your library of string functions.
