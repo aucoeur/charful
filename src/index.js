@@ -102,12 +102,18 @@ console.log(shift('foobar', 3))
 // If the given string has more than three words pick the three longest and make the hash tag from those.
 
 // Example:
-
 // input: "Amazing bongo drums for sale"
 // output: ['#amazing', '#bongo', '#drums']
 // Strategies:
 
 // Split the string into an array of words by splitting on the " ". Check the length. Sort by length. Uppercase each of the first three words and add '#' at the beginning.
+function makeHashTag(str) {
+  list = str.split(' ')
+  list.sort((a, b) =>  b.length - a.length ) // Longest length first
+  // console.log(sorted)
+  return list.slice(0, 3).map(word => `#${capitalize(word)}`).join('')
+}
+console.log(makeHashTag("Amazing bongo drums for sale"))
 // Challenge 10
 
 // isEmpty(str) - Returns true if the given string is empty or contains only whitespace. White space includes: spaces, line returns, and tabs. These characters can be represented with: \n (new line) \r (carrige return), \t (tab).
