@@ -1,7 +1,7 @@
 {
   "name": "charful",
-  "version": "1.0.0",
-  "description": "charful is a string utility library",
+  "version": "2.0.0",
+  "description": "charful is a baby string utility library that's trying to be careful",
   "main": "src/index",
   "type": "module",
   "scripts": {
