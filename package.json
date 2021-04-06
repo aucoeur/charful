@@ -1,7 +1,8 @@
 {
-  "name": "charful",
-  "version": "2.0.0",
+  "name": "@okayauco/charful",
+  "version": "0.2.1",
   "description": "charful is a baby string utility library that's trying to be careful",
+  "author": "Aucoeur Ngo",
   "main": "src/index",
   "type": "module",
   "scripts": {
@@ -11,6 +12,5 @@
     "type": "git",
     "url": "git+https://github.com/aucoeur/charful.git"
   },
-  "author": "Aucoeur Ngo",
   "license": "MIT"
 }

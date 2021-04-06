@@ -1,7 +1,7 @@
 # be charful ok
-[![NPM version](https://img.shields.io/npm/v/charful.svg?style=flat&color=eaff00)](https://www.npmjs.com/package/charful) 
+[![NPM version](https://img.shields.io/npm/v/aucoeur/charful.svg?style=flat&color=eaff00)](https://www.npmjs.com/package/charful) 
 ![GitHub last commit](https://img.shields.io/github/last-commit/aucoeur/charful?style=flat)
-[![NPM downloads](https://img.shields.io/npm/dt/charful.svg?style=flat)](https://npmjs.org/package/charful)  
+[![NPM downloads](https://img.shields.io/npm/dt/aucoeur/charful.svg?style=flat)](https://npmjs.org/package/charful)  
 
 *(char like character, not burnt to a crisp)* 🤓  
 charful is a baby string utility library that's trying to be careful

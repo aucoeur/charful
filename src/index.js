@@ -6,7 +6,7 @@ class Charful {
   }
 
   // Challenge 1
-  // capitalize() - makes the first character of a given string uppercase.
+  // capitalize(str) - makes the first character of a given string uppercase.
   // Example: hello world -> Hello world
   capitalize(str) {
     // const notFirst =
@@ -16,7 +16,7 @@ class Charful {
   // console.log(capitalize('fOO'))
 
   // Challenge 2
-  // allCaps() - makes all characters uppercase. (this is the same as str.toUpperCase())
+  // allCaps(str) - makes all characters uppercase. (this is the same as str.toUpperCase())
   // Example: foo bar -> FOO BAR
   allCaps(str) {
     return str.toUpperCase()
@@ -29,7 +29,7 @@ class Charful {
   // console.log(shout('fubar'))
 
   // Challenge 3
-  // capitalizeWords() - makes the first character of each word uppercase. Imagine that each word is separated by a space.
+  // capitalizeWords(str) - makes the first character of each word uppercase. Imagine that each word is separated by a space.
   // Example: do all the things -> Do All The Things
 
   capitalizeWords(str) {
@@ -41,7 +41,7 @@ class Charful {
   // console.log(capitalizeWords('bOOpers'))
 
   // Challenge 4
-  // removeExtraSpaces() - Removes all spaces from the beginning and end of a String along with any extra spaces in the middle. If more than one space appears in the middle of a string it is replaced by a single space.
+  // removeExtraSpaces(str) - Removes all spaces from the beginning and end of a String along with any extra spaces in the middle. If more than one space appears in the middle of a string it is replaced by a single space.
 
   // Advanced: Remove all whitespace characters, this includes return, enter, and tabs along with spaces.
   removeExtraSpaces(str) {
@@ -52,7 +52,7 @@ class Charful {
 
 
   // Challenge 5
-  // kebabCase() - Removes extra spaces and replaces spaces with the hyphen "-", and makes all characters lowercase.
+  // kebabCase(str) - Removes extra spaces and replaces spaces with the hyphen "-", and makes all characters lowercase.
   // Example: " Hello world " -> "hello-world"
   // Advanced: Remove special characters from the string. For example: "Hello World!" -> "hello-world" (notice the ! is removed)
 
@@ -64,7 +64,7 @@ class Charful {
   // console.log(kebabCase('hello world foo bar!'))
 
   // Challenge 6
-  // snakeCase() - Removes extra space and replaces spaces with an underscore "_", and makes all characters lowercase.
+  // snakeCase(str) - Removes extra space and replaces spaces with an underscore "_", and makes all characters lowercase.
   // Example: " what the heck " -> "what_the_heck"
 
   snakeCase(str) {
@@ -74,7 +74,7 @@ class Charful {
   // console.log(snakeCase('hello under world'))
 
   // Challenge 7
-  // camelCase() - Lowercases the first character of the first word. Then uppercases the first character of all other words, and removes all spaces.
+  // camelCase(str) - Lowercases the first character of the first word. Then uppercases the first character of all other words, and removes all spaces.
   // Example: Camel Case -> camelCase
 
   camelCase(str) {
@@ -86,7 +86,7 @@ class Charful {
   // console.log(camelCase('Hello world domination'))
 
   // Challenge 8
-  // shift() this method will take the first character of a string and move to the end of a string:
+  // shift(str) this method will take the first character of a string and move to the end of a string:
   // Example: Hello World -> ello WorldH
 
   // Strategies: Use String.slice()
@@ -136,7 +136,7 @@ class Charful {
   isEmpty(str) {
     // .test() returns true if regex match..
     // note: returning false if true might be kind of janky.. maybe reconsider
-    return (/\S/i).test(str) ? false : true
+    return (/\S/i).test() ? false : true
   }
 
   // const emptyStr = `
