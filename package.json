@@ -1,6 +1,6 @@
 {
   "name": "@okayauco/charful",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "charful is a baby string utility library that's trying to be careful",
   "author": "Aucoeur Ngo",
   "main": "src/index",
