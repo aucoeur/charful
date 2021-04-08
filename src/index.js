@@ -1,5 +1,3 @@
-console.log('hey, be charful ok')
-
 class Charful {
   constructor(str) {
     this.str = str
@@ -138,19 +136,7 @@ class Charful {
     // note: returning false if true might be kind of janky.. maybe reconsider
     return (/\S/i).test() ? false : true
   }
-
-  // const emptyStr = `
-
-  // 		`;
-  // console.log(isEmpty(emptyStr)) // true
-  // console.log(isEmpty('\t\r\n ')) // true
-  // console.log(isEmpty('  h   ')) // false
-  // console.log(isEmpty('  \t1   ')) // false
-
 }
 
-
-// Challenge 11 Adding documentation
-// Add a readme.md to your GitHub Repo. In this file you will document your library of string functions.
-
+// console.log('hey, be charful ok')
 export default Charful;
