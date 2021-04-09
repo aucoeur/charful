@@ -32,7 +32,7 @@ class Charful {
 
   capitalizeWords(str) {
     const strSplit = str.split(' ')
-    return strSplit.map((word) => capitalize(word)).join(' ')
+    return strSplit.map((word) => this.capitalize(word)).join(' ')
   }
 
   // console.log(capitalizeWords('hello foo bar world!'))
@@ -77,7 +77,7 @@ class Charful {
 
   camelCase(str) {
     const lower = str.toLowerCase().split(' ')
-    const formatFirstChars = lower.slice(1).map((word) => capitalize(word))
+    const formatFirstChars = lower.slice(1).map((word) => this.capitalize(word))
     return `${lower[0].toLowerCase()}${formatFirstChars.join('')}`
   }
 
@@ -111,10 +111,10 @@ class Charful {
 
   // Split the string into an array of words by splitting on the " ". Check the length. Sort by length. Uppercase each of the first three words and add '#' at the beginning.
   makeHashTag(str) {
-    list = str.split(' ')
+    const list = str.split(' ')
     list.sort((a, b) => b.length - a.length) // Longest length first
     // console.log(sorted)
-    return list.slice(0, 3).map(word => `#${capitalize(word)}`).join('')
+    return list.slice(0, 3).map(word => `#${this.capitalize(word)}`)
   }
   // console.log(makeHashTag("Amazing bongo drums for sale"))
 
@@ -134,7 +134,7 @@ class Charful {
   isEmpty(str) {
     // .test() returns true if regex match..
     // note: returning false if true might be kind of janky.. maybe reconsider
-    return (/\S/i).test() ? false : true
+    return (/^(\w+\S+)$/).test(str) ? false : true
   }
 }
 
